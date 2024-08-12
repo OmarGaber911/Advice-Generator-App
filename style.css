@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+.head {
+    color: hsl(150, 100%, 66%);
+    text-align: center;
+    padding-top: 20px;        
+    font-weight: 800;
+    font-family: 'Manrope', sans-serif; 
+}
+
+.advice-container {
+    width: 600px; /* Set width to 600px */
+    height: 400px; /* Set height to 400px */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Space items evenly along the vertical axis */
+    align-items: center;
+    padding-bottom: 20px; /* Padding for the images at the bottom */
+    position: relative; 
+    background-color: hsl(217, 19%, 24%);
+}
+
+.advice {
+    color: hsl(193, 38%, 86%);
+    text-align: center;
+    padding: 20px; /* Corrected padding */
+    font-weight: 800;
+    font-family: 'Manrope', sans-serif; 
+    font-size: 28px;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(218, 23%, 16%);
+}
+
+.bottom-images {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items horizontally */
+    gap: 10px; /* Space between images */
+}
+
+.pattern-divider {
+    width: 90%; /* Full width of the container */
+    height: 25px; /* Set height for the pattern divider */
+    /* Set background color for the pattern divider */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 100px; /* Adjusted margin to fit the design */
+}
+
+#quoteImageContainer {
+    width: 70px; /* Container size to accommodate padding and image size */
+    height: 70px; /* Container size */
+    background-color: hsl(150, 100%, 66%); /* Background color of the container */
+    padding: 10px; /* Padding inside the container */
+    border-radius: 50%; /* Circular container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -35px;
+     /* Half of the container height to position half inside, half outside */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Initial shadow for depth */
+    transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow */
+}
+
+#quoteImageContainer:hover {
+    box-shadow: 0 0 20px hsl(150, 100%, 66%); /* Change box-shadow color on hover */
+}
+
+#quoteImage {
+    width: 50px; /* Width of the image */
+    height: 50px; /* Height of the image */
+    /* Ensure the image is centered inside the circular container */
+}
